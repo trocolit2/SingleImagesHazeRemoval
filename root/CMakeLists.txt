@@ -37,8 +37,8 @@ set(patch_release 0)
 ##########################
 ## SOURCE MAIN PATH ##
 ##########################
-#include_directories(${source_path})
-#add_subdirectory(${source_path})
+include_directories(${source_path})
+add_subdirectory(${source_path})
 
 ####################
 ## TEST MAIN PATH ##
