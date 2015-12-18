@@ -17,8 +17,9 @@
 
 class CLAHE: public SingleImageHazeRemoval {
 public:
-    CLAHE(double clipLimit = 4.0, cv::Size grid = cv::Size(4, 4));
-    virtual ~CLAHE();
+    CLAHE();
+    CLAHE(double clipLimit, cv::Size grid);
+    ~CLAHE();
     cv::Mat applyHazeRemoval(cv::Mat image);
     std::string getSelectedMethod() {
         return "CLAHE";

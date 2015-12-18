@@ -5,5 +5,5 @@
  *      Author: tiagotrocoli
  */
 
-#include "CLAHE.h"
+#include <histogram/CLAHE.h>
 

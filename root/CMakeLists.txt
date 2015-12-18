@@ -6,8 +6,6 @@ project(libSingleImageHazeRemoval)
 ## PROJECT SETTINGS ##
 ######################
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x ") 
-
 ## DEFINE MAIN PATHS
 set(bin_path ${PROJECT_BINARY_DIR}/bin)
 set(source_path ${PROJECT_SOURCE_DIR}/src)
@@ -43,5 +41,5 @@ add_subdirectory(${source_path})
 ####################
 ## TEST MAIN PATH ##
 ####################
-#enable_testing()
-#add_subdirectory(${test_path})
+enable_testing()
+add_subdirectory(${test_path})

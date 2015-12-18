@@ -9,21 +9,16 @@
 #define SOURCE_DIRECTORY__SRC_SINGLEIMAGEHAZEREMOVAL_H_
 
 #include <string>
-#include <iostream>
-#include <vector>
 
 #include <opencv2/core/core.hpp>
 
 class SingleImageHazeRemoval {
 
 public:
-    virtual ~SingleImageHazeRemoval();
+    virtual ~SingleImageHazeRemoval() {}
 
-    virtual cv::Mat applyHazeRemoval(cv::Mat image);
-
-    virtual std::string getSelectedMethod() {
-        return "No Method Selected";
-    }
+    virtual cv::Mat applyHazeRemoval(cv::Mat image)=0;
+    virtual std::string getSelectedMethod()=0;
 
 };
 

@@ -8,14 +8,16 @@
 #ifndef SOURCE_DIRECTORY__SRC_HISTOGRAM_HISTOGRAMEQUALIZATION_H_
 #define SOURCE_DIRECTORY__SRC_HISTOGRAM_HISTOGRAMEQUALIZATION_H_
 
-#include <opencv2/core/core.hpp>
-#include <SingleImageHazeRemoval.h>
 #include <string>
+#include <opencv2/core/core.hpp>
+
+#include "../SingleImageHazeRemoval.h"
 
 class HistogramEqualization: public SingleImageHazeRemoval {
 public:
     HistogramEqualization();
-    virtual ~HistogramEqualization();
+    ~HistogramEqualization();
+
     cv::Mat applyHazeRemoval(cv::Mat image);
     std::string getSelectedMethod() {
         return "HistogramEqualization";
